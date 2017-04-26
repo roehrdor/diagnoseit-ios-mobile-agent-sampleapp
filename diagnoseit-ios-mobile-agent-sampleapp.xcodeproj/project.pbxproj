@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F0F39CF1EB1111800A0BC1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0F39CD1EB1111800A0BC1F /* Main.storyboard */; };
+		5F0F39D11EB1111800A0BC1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0F39D01EB1111800A0BC1F /* Assets.xcassets */; };
+		5F0F39D41EB1111800A0BC1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0F39D21EB1111800A0BC1F /* LaunchScreen.storyboard */; };
+		5F0F39EF1EB1114E00A0BC1F /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39DC1EB1114E00A0BC1F /* Agent.swift */; };
+		5F0F39F01EB1114E00A0BC1F /* AsynchronousMetricsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39DD1EB1114E00A0BC1F /* AsynchronousMetricsController.swift */; };
+		5F0F39F11EB1114E00A0BC1F /* BatteryLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39DE1EB1114E00A0BC1F /* BatteryLevel.swift */; };
+		5F0F39F21EB1114E00A0BC1F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39DF1EB1114E00A0BC1F /* Constants.swift */; };
+		5F0F39F31EB1114E00A0BC1F /* DataSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39E01EB1114E00A0BC1F /* DataSerializer.swift */; };
+		5F0F39F41EB1114E00A0BC1F /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39E11EB1114E00A0BC1F /* DataStorage.swift */; };
+		5F0F39F51EB1114E00A0BC1F /* DiskMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39E21EB1114E00A0BC1F /* DiskMetric.swift */; };
+		5F0F39F61EB1114E00A0BC1F /* IntervalMetricsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39E31EB1114E00A0BC1F /* IntervalMetricsController.swift */; };
+		5F0F39F71EB1114E00A0BC1F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5F0F39E41EB1114E00A0BC1F /* LICENSE */; };
+		5F0F39F81EB1114E00A0BC1F /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39E51EB1114E00A0BC1F /* LocationHandler.swift */; };
+		5F0F39F91EB1114E00A0BC1F /* nativeDiagnostics.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39E61EB1114E00A0BC1F /* nativeDiagnostics.c */; };
+		5F0F39FA1EB1114E00A0BC1F /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39E81EB1114E00A0BC1F /* NetworkReachability.swift */; };
+		5F0F39FB1EB1114E00A0BC1F /* RemoteCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39E91EB1114E00A0BC1F /* RemoteCall.swift */; };
+		5F0F39FC1EB1114E00A0BC1F /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39EA1EB1114E00A0BC1F /* RestManager.swift */; };
+		5F0F39FD1EB1114E00A0BC1F /* Span.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39EB1EB1114E00A0BC1F /* Span.swift */; };
+		5F0F39FE1EB1114E00A0BC1F /* SSIDSniffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39EC1EB1114E00A0BC1F /* SSIDSniffer.swift */; };
+		5F0F39FF1EB1114E00A0BC1F /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39ED1EB1114E00A0BC1F /* UseCase.swift */; };
+		5F0F3A001EB1114E00A0BC1F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F39EE1EB1114E00A0BC1F /* Util.swift */; };
+		5F0F3AA51EB113AD00A0BC1F /* AgentInstrumentedMethodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A701EB113AD00A0BC1F /* AgentInstrumentedMethodModel.swift */; };
+		5F0F3AA61EB113AD00A0BC1F /* AgentManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A711EB113AD00A0BC1F /* AgentManagementViewController.swift */; };
+		5F0F3AA71EB113AD00A0BC1F /* AgentMethodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A721EB113AD00A0BC1F /* AgentMethodDetailViewController.swift */; };
+		5F0F3AA81EB113AD00A0BC1F /* AgentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A731EB113AD00A0BC1F /* AgentMethodViewController.swift */; };
+		5F0F3AA91EB113AD00A0BC1F /* AgentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A741EB113AD00A0BC1F /* AgentModel.swift */; };
+		5F0F3AAA1EB113AD00A0BC1F /* AgentSensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A751EB113AD00A0BC1F /* AgentSensorViewController.swift */; };
+		5F0F3AAB1EB113AD00A0BC1F /* AgentStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A761EB113AD00A0BC1F /* AgentStatusModel.swift */; };
+		5F0F3AAC1EB113AD00A0BC1F /* AgentUsedSensorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A771EB113AD00A0BC1F /* AgentUsedSensorModel.swift */; };
+		5F0F3AAD1EB113AD00A0BC1F /* AgentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A781EB113AD00A0BC1F /* AgentViewController.swift */; };
+		5F0F3AAE1EB113AD00A0BC1F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A791EB113AD00A0BC1F /* AlertView.swift */; };
+		5F0F3AAF1EB113AD00A0BC1F /* AntiPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A7A1EB113AD00A0BC1F /* AntiPatternViewController.swift */; };
+		5F0F3AB01EB113AD00A0BC1F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A7B1EB113AD00A0BC1F /* Book.swift */; };
+		5F0F3AB11EB113AD00A0BC1F /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A7C1EB113AD00A0BC1F /* BookTableViewCell.swift */; };
+		5F0F3AB21EB113AD00A0BC1F /* BookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0F3A7D1EB113AD00A0BC1F /* BookTableViewCell.xib */; };
+		5F0F3AB31EB113AD00A0BC1F /* BusinessContextDefinitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A7E1EB113AD00A0BC1F /* BusinessContextDefinitionModel.swift */; };
+		5F0F3AB41EB113AD00A0BC1F /* BusinessContextDefinitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A7F1EB113AD00A0BC1F /* BusinessContextDefinitionsViewController.swift */; };
+		5F0F3AB51EB113AD00A0BC1F /* BusinessContextDefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A801EB113AD00A0BC1F /* BusinessContextDefinitionViewController.swift */; };
+		5F0F3AB61EB113AD00A0BC1F /* BusinessContextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A811EB113AD00A0BC1F /* BusinessContextModel.swift */; };
+		5F0F3AB71EB113AD00A0BC1F /* BusinessContextsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A821EB113AD00A0BC1F /* BusinessContextsViewController.swift */; };
+		5F0F3AB81EB113AD00A0BC1F /* BusinessContextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A831EB113AD00A0BC1F /* BusinessContextViewController.swift */; };
+		5F0F3AB91EB113AD00A0BC1F /* BusinessTransactionDefinitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A841EB113AD00A0BC1F /* BusinessTransactionDefinitionModel.swift */; };
+		5F0F3ABA1EB113AD00A0BC1F /* BusinessTransactionDefinitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A851EB113AD00A0BC1F /* BusinessTransactionDefinitionsViewController.swift */; };
+		5F0F3ABB1EB113AD00A0BC1F /* BusinessTransactionDefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A861EB113AD00A0BC1F /* BusinessTransactionDefinitionViewController.swift */; };
+		5F0F3ABC1EB113AD00A0BC1F /* BusinessTransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A871EB113AD00A0BC1F /* BusinessTransactionModel.swift */; };
+		5F0F3ABD1EB113AD00A0BC1F /* BusinessTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A881EB113AD00A0BC1F /* BusinessTransactionsViewController.swift */; };
+		5F0F3ABE1EB113AD00A0BC1F /* BusinessTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A891EB113AD00A0BC1F /* BusinessTransactionViewController.swift */; };
+		5F0F3ABF1EB113AD00A0BC1F /* CmrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A8A1EB113AD00A0BC1F /* CmrViewController.swift */; };
+		5F0F3AC01EB113AD00A0BC1F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A8B1EB113AD00A0BC1F /* CustomTableViewCell.swift */; };
+		5F0F3AC11EB113AD00A0BC1F /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0F3A8C1EB113AD00A0BC1F /* CustomTableViewCell.xib */; };
+		5F0F3AC21EB113AD00A0BC1F /* DateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A8D1EB113AD00A0BC1F /* DateViewModel.swift */; };
+		5F0F3AC31EB113AD00A0BC1F /* HighMemoryUsageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A8F1EB113AD00A0BC1F /* HighMemoryUsageViewController.swift */; };
+		5F0F3AC41EB113AD00A0BC1F /* ImageLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A901EB113AD00A0BC1F /* ImageLoadViewController.swift */; };
+		5F0F3AC51EB113AD00A0BC1F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F0F3A911EB113AD00A0BC1F /* Info.plist */; };
+		5F0F3AC61EB113AD00A0BC1F /* InvocationFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A921EB113AD00A0BC1F /* InvocationFilterViewController.swift */; };
+		5F0F3AC71EB113AD00A0BC1F /* InvocationManagmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A931EB113AD00A0BC1F /* InvocationManagmentViewController.swift */; };
+		5F0F3AC81EB113AD00A0BC1F /* InvocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A941EB113AD00A0BC1F /* InvocationModel.swift */; };
+		5F0F3AC91EB113AD00A0BC1F /* InvocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A951EB113AD00A0BC1F /* InvocationViewController.swift */; };
+		5F0F3ACA1EB113AD00A0BC1F /* ListEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A961EB113AD00A0BC1F /* ListEntry.swift */; };
+		5F0F3ACB1EB113AD00A0BC1F /* ManyEqualUrlCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A971EB113AD00A0BC1F /* ManyEqualUrlCallViewController.swift */; };
+		5F0F3ACC1EB113AD00A0BC1F /* ManyRemoteCallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A981EB113AD00A0BC1F /* ManyRemoteCallsViewController.swift */; };
+		5F0F3ACD1EB113AD00A0BC1F /* ManyURLCallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A991EB113AD00A0BC1F /* ManyURLCallsViewController.swift */; };
+		5F0F3ACE1EB113AD00A0BC1F /* NumericTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A9A1EB113AD00A0BC1F /* NumericTextField.swift */; };
+		5F0F3ACF1EB113AD00A0BC1F /* ScheduleRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A9B1EB113AD00A0BC1F /* ScheduleRecordingViewController.swift */; };
+		5F0F3AD01EB113AD00A0BC1F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A9C1EB113AD00A0BC1F /* SettingsViewController.swift */; };
+		5F0F3AD11EB113AD00A0BC1F /* StorageManagmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A9D1EB113AD00A0BC1F /* StorageManagmentViewController.swift */; };
+		5F0F3AD21EB113AD00A0BC1F /* StorageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A9E1EB113AD00A0BC1F /* StorageModel.swift */; };
+		5F0F3AD31EB113AD00A0BC1F /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3A9F1EB113AD00A0BC1F /* StorageViewController.swift */; };
+		5F0F3AD41EB113AD00A0BC1F /* SuperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3AA01EB113AD00A0BC1F /* SuperModel.swift */; };
+		5F0F3AD51EB113AD00A0BC1F /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3AA11EB113AD00A0BC1F /* TableController.swift */; };
+		5F0F3AD61EB113AD00A0BC1F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3AA21EB113AD00A0BC1F /* TableViewController.swift */; };
+		5F0F3AD71EB113AD00A0BC1F /* UIUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3AA31EB113AD00A0BC1F /* UIUtil.swift */; };
+		5F0F3AD81EB113AD00A0BC1F /* URLSessionExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3AA41EB113AD00A0BC1F /* URLSessionExtender.swift */; };
+		5F0F3ADB1EB113C300A0BC1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3AD91EB113C300A0BC1F /* AppDelegate.swift */; };
+		5F0F3ADC1EB113C300A0BC1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F3ADA1EB113C300A0BC1F /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F0F39C61EB1111800A0BC1F /* diagnoseit-ios-mobile-agent-sampleapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "diagnoseit-ios-mobile-agent-sampleapp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0F39CE1EB1111800A0BC1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F0F39D01EB1111800A0BC1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F0F39D31EB1111800A0BC1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F0F39D51EB1111800A0BC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F0F39DC1EB1114E00A0BC1F /* Agent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		5F0F39DD1EB1114E00A0BC1F /* AsynchronousMetricsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousMetricsController.swift; sourceTree = "<group>"; };
+		5F0F39DE1EB1114E00A0BC1F /* BatteryLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryLevel.swift; sourceTree = "<group>"; };
+		5F0F39DF1EB1114E00A0BC1F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5F0F39E01EB1114E00A0BC1F /* DataSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSerializer.swift; sourceTree = "<group>"; };
+		5F0F39E11EB1114E00A0BC1F /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		5F0F39E21EB1114E00A0BC1F /* DiskMetric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskMetric.swift; sourceTree = "<group>"; };
+		5F0F39E31EB1114E00A0BC1F /* IntervalMetricsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalMetricsController.swift; sourceTree = "<group>"; };
+		5F0F39E41EB1114E00A0BC1F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5F0F39E51EB1114E00A0BC1F /* LocationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		5F0F39E61EB1114E00A0BC1F /* nativeDiagnostics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nativeDiagnostics.c; sourceTree = "<group>"; };
+		5F0F39E71EB1114E00A0BC1F /* nativeDiagnostics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nativeDiagnostics.h; sourceTree = "<group>"; };
+		5F0F39E81EB1114E00A0BC1F /* NetworkReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		5F0F39E91EB1114E00A0BC1F /* RemoteCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteCall.swift; sourceTree = "<group>"; };
+		5F0F39EA1EB1114E00A0BC1F /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
+		5F0F39EB1EB1114E00A0BC1F /* Span.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Span.swift; sourceTree = "<group>"; };
+		5F0F39EC1EB1114E00A0BC1F /* SSIDSniffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSIDSniffer.swift; sourceTree = "<group>"; };
+		5F0F39ED1EB1114E00A0BC1F /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		5F0F39EE1EB1114E00A0BC1F /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		5F0F3A701EB113AD00A0BC1F /* AgentInstrumentedMethodModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentInstrumentedMethodModel.swift; sourceTree = "<group>"; };
+		5F0F3A711EB113AD00A0BC1F /* AgentManagementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentManagementViewController.swift; sourceTree = "<group>"; };
+		5F0F3A721EB113AD00A0BC1F /* AgentMethodDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentMethodDetailViewController.swift; sourceTree = "<group>"; };
+		5F0F3A731EB113AD00A0BC1F /* AgentMethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentMethodViewController.swift; sourceTree = "<group>"; };
+		5F0F3A741EB113AD00A0BC1F /* AgentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentModel.swift; sourceTree = "<group>"; };
+		5F0F3A751EB113AD00A0BC1F /* AgentSensorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentSensorViewController.swift; sourceTree = "<group>"; };
+		5F0F3A761EB113AD00A0BC1F /* AgentStatusModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentStatusModel.swift; sourceTree = "<group>"; };
+		5F0F3A771EB113AD00A0BC1F /* AgentUsedSensorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentUsedSensorModel.swift; sourceTree = "<group>"; };
+		5F0F3A781EB113AD00A0BC1F /* AgentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentViewController.swift; sourceTree = "<group>"; };
+		5F0F3A791EB113AD00A0BC1F /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		5F0F3A7A1EB113AD00A0BC1F /* AntiPatternViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntiPatternViewController.swift; sourceTree = "<group>"; };
+		5F0F3A7B1EB113AD00A0BC1F /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		5F0F3A7C1EB113AD00A0BC1F /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		5F0F3A7D1EB113AD00A0BC1F /* BookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookTableViewCell.xib; sourceTree = "<group>"; };
+		5F0F3A7E1EB113AD00A0BC1F /* BusinessContextDefinitionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessContextDefinitionModel.swift; sourceTree = "<group>"; };
+		5F0F3A7F1EB113AD00A0BC1F /* BusinessContextDefinitionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessContextDefinitionsViewController.swift; sourceTree = "<group>"; };
+		5F0F3A801EB113AD00A0BC1F /* BusinessContextDefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessContextDefinitionViewController.swift; sourceTree = "<group>"; };
+		5F0F3A811EB113AD00A0BC1F /* BusinessContextModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessContextModel.swift; sourceTree = "<group>"; };
+		5F0F3A821EB113AD00A0BC1F /* BusinessContextsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessContextsViewController.swift; sourceTree = "<group>"; };
+		5F0F3A831EB113AD00A0BC1F /* BusinessContextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessContextViewController.swift; sourceTree = "<group>"; };
+		5F0F3A841EB113AD00A0BC1F /* BusinessTransactionDefinitionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessTransactionDefinitionModel.swift; sourceTree = "<group>"; };
+		5F0F3A851EB113AD00A0BC1F /* BusinessTransactionDefinitionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessTransactionDefinitionsViewController.swift; sourceTree = "<group>"; };
+		5F0F3A861EB113AD00A0BC1F /* BusinessTransactionDefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessTransactionDefinitionViewController.swift; sourceTree = "<group>"; };
+		5F0F3A871EB113AD00A0BC1F /* BusinessTransactionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessTransactionModel.swift; sourceTree = "<group>"; };
+		5F0F3A881EB113AD00A0BC1F /* BusinessTransactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessTransactionsViewController.swift; sourceTree = "<group>"; };
+		5F0F3A891EB113AD00A0BC1F /* BusinessTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessTransactionViewController.swift; sourceTree = "<group>"; };
+		5F0F3A8A1EB113AD00A0BC1F /* CmrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CmrViewController.swift; sourceTree = "<group>"; };
+		5F0F3A8B1EB113AD00A0BC1F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		5F0F3A8C1EB113AD00A0BC1F /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		5F0F3A8D1EB113AD00A0BC1F /* DateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewModel.swift; sourceTree = "<group>"; };
+		5F0F3A8F1EB113AD00A0BC1F /* HighMemoryUsageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighMemoryUsageViewController.swift; sourceTree = "<group>"; };
+		5F0F3A901EB113AD00A0BC1F /* ImageLoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoadViewController.swift; sourceTree = "<group>"; };
+		5F0F3A911EB113AD00A0BC1F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F0F3A921EB113AD00A0BC1F /* InvocationFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvocationFilterViewController.swift; sourceTree = "<group>"; };
+		5F0F3A931EB113AD00A0BC1F /* InvocationManagmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvocationManagmentViewController.swift; sourceTree = "<group>"; };
+		5F0F3A941EB113AD00A0BC1F /* InvocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvocationModel.swift; sourceTree = "<group>"; };
+		5F0F3A951EB113AD00A0BC1F /* InvocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvocationViewController.swift; sourceTree = "<group>"; };
+		5F0F3A961EB113AD00A0BC1F /* ListEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntry.swift; sourceTree = "<group>"; };
+		5F0F3A971EB113AD00A0BC1F /* ManyEqualUrlCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManyEqualUrlCallViewController.swift; sourceTree = "<group>"; };
+		5F0F3A981EB113AD00A0BC1F /* ManyRemoteCallsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManyRemoteCallsViewController.swift; sourceTree = "<group>"; };
+		5F0F3A991EB113AD00A0BC1F /* ManyURLCallsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManyURLCallsViewController.swift; sourceTree = "<group>"; };
+		5F0F3A9A1EB113AD00A0BC1F /* NumericTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericTextField.swift; sourceTree = "<group>"; };
+		5F0F3A9B1EB113AD00A0BC1F /* ScheduleRecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleRecordingViewController.swift; sourceTree = "<group>"; };
+		5F0F3A9C1EB113AD00A0BC1F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5F0F3A9D1EB113AD00A0BC1F /* StorageManagmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManagmentViewController.swift; sourceTree = "<group>"; };
+		5F0F3A9E1EB113AD00A0BC1F /* StorageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageModel.swift; sourceTree = "<group>"; };
+		5F0F3A9F1EB113AD00A0BC1F /* StorageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
+		5F0F3AA01EB113AD00A0BC1F /* SuperModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperModel.swift; sourceTree = "<group>"; };
+		5F0F3AA11EB113AD00A0BC1F /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		5F0F3AA21EB113AD00A0BC1F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5F0F3AA31EB113AD00A0BC1F /* UIUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtil.swift; sourceTree = "<group>"; };
+		5F0F3AA41EB113AD00A0BC1F /* URLSessionExtender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionExtender.swift; sourceTree = "<group>"; };
+		5F0F3AD91EB113C300A0BC1F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F0F3ADA1EB113C300A0BC1F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F0F3ADD1EB1141C00A0BC1F /* diagnoseit-ios-mobile-agent-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "diagnoseit-ios-mobile-agent-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F0F39C31EB1111800A0BC1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F0F39BD1EB1111800A0BC1F = {
+			isa = PBXGroup;
+			children = (
+				5F0F39C81EB1111800A0BC1F /* diagnoseit-ios-mobile-agent-sampleapp */,
+				5F0F39C71EB1111800A0BC1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F0F39C71EB1111800A0BC1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F0F39C61EB1111800A0BC1F /* diagnoseit-ios-mobile-agent-sampleapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F0F39C81EB1111800A0BC1F /* diagnoseit-ios-mobile-agent-sampleapp */ = {
+			isa = PBXGroup;
+			children = (
+				5F0F3AD91EB113C300A0BC1F /* AppDelegate.swift */,
+				5F0F3ADA1EB113C300A0BC1F /* ViewController.swift */,
+				5F0F3A6F1EB113AD00A0BC1F /* App */,
+				5F0F39DB1EB1114E00A0BC1F /* Agent */,
+				5F0F39CD1EB1111800A0BC1F /* Main.storyboard */,
+				5F0F39D01EB1111800A0BC1F /* Assets.xcassets */,
+				5F0F39D21EB1111800A0BC1F /* LaunchScreen.storyboard */,
+				5F0F39D51EB1111800A0BC1F /* Info.plist */,
+			);
+			path = "diagnoseit-ios-mobile-agent-sampleapp";
+			sourceTree = "<group>";
+		};
+		5F0F39DB1EB1114E00A0BC1F /* Agent */ = {
+			isa = PBXGroup;
+			children = (
+				5F0F3ADD1EB1141C00A0BC1F /* diagnoseit-ios-mobile-agent-Bridging-Header.h */,
+				5F0F39DC1EB1114E00A0BC1F /* Agent.swift */,
+				5F0F39DD1EB1114E00A0BC1F /* AsynchronousMetricsController.swift */,
+				5F0F39DE1EB1114E00A0BC1F /* BatteryLevel.swift */,
+				5F0F39DF1EB1114E00A0BC1F /* Constants.swift */,
+				5F0F39E01EB1114E00A0BC1F /* DataSerializer.swift */,
+				5F0F39E11EB1114E00A0BC1F /* DataStorage.swift */,
+				5F0F39E21EB1114E00A0BC1F /* DiskMetric.swift */,
+				5F0F39E31EB1114E00A0BC1F /* IntervalMetricsController.swift */,
+				5F0F39E41EB1114E00A0BC1F /* LICENSE */,
+				5F0F39E51EB1114E00A0BC1F /* LocationHandler.swift */,
+				5F0F39E61EB1114E00A0BC1F /* nativeDiagnostics.c */,
+				5F0F39E71EB1114E00A0BC1F /* nativeDiagnostics.h */,
+				5F0F39E81EB1114E00A0BC1F /* NetworkReachability.swift */,
+				5F0F39E91EB1114E00A0BC1F /* RemoteCall.swift */,
+				5F0F39EA1EB1114E00A0BC1F /* RestManager.swift */,
+				5F0F39EB1EB1114E00A0BC1F /* Span.swift */,
+				5F0F39EC1EB1114E00A0BC1F /* SSIDSniffer.swift */,
+				5F0F39ED1EB1114E00A0BC1F /* UseCase.swift */,
+				5F0F39EE1EB1114E00A0BC1F /* Util.swift */,
+			);
+			path = Agent;
+			sourceTree = "<group>";
+		};
+		5F0F3A6F1EB113AD00A0BC1F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5F0F3A701EB113AD00A0BC1F /* AgentInstrumentedMethodModel.swift */,
+				5F0F3A711EB113AD00A0BC1F /* AgentManagementViewController.swift */,
+				5F0F3A721EB113AD00A0BC1F /* AgentMethodDetailViewController.swift */,
+				5F0F3A731EB113AD00A0BC1F /* AgentMethodViewController.swift */,
+				5F0F3A741EB113AD00A0BC1F /* AgentModel.swift */,
+				5F0F3A751EB113AD00A0BC1F /* AgentSensorViewController.swift */,
+				5F0F3A761EB113AD00A0BC1F /* AgentStatusModel.swift */,
+				5F0F3A771EB113AD00A0BC1F /* AgentUsedSensorModel.swift */,
+				5F0F3A781EB113AD00A0BC1F /* AgentViewController.swift */,
+				5F0F3A791EB113AD00A0BC1F /* AlertView.swift */,
+				5F0F3A7A1EB113AD00A0BC1F /* AntiPatternViewController.swift */,
+				5F0F3A7B1EB113AD00A0BC1F /* Book.swift */,
+				5F0F3A7C1EB113AD00A0BC1F /* BookTableViewCell.swift */,
+				5F0F3A7D1EB113AD00A0BC1F /* BookTableViewCell.xib */,
+				5F0F3A7E1EB113AD00A0BC1F /* BusinessContextDefinitionModel.swift */,
+				5F0F3A7F1EB113AD00A0BC1F /* BusinessContextDefinitionsViewController.swift */,
+				5F0F3A801EB113AD00A0BC1F /* BusinessContextDefinitionViewController.swift */,
+				5F0F3A811EB113AD00A0BC1F /* BusinessContextModel.swift */,
+				5F0F3A821EB113AD00A0BC1F /* BusinessContextsViewController.swift */,
+				5F0F3A831EB113AD00A0BC1F /* BusinessContextViewController.swift */,
+				5F0F3A841EB113AD00A0BC1F /* BusinessTransactionDefinitionModel.swift */,
+				5F0F3A851EB113AD00A0BC1F /* BusinessTransactionDefinitionsViewController.swift */,
+				5F0F3A861EB113AD00A0BC1F /* BusinessTransactionDefinitionViewController.swift */,
+				5F0F3A871EB113AD00A0BC1F /* BusinessTransactionModel.swift */,
+				5F0F3A881EB113AD00A0BC1F /* BusinessTransactionsViewController.swift */,
+				5F0F3A891EB113AD00A0BC1F /* BusinessTransactionViewController.swift */,
+				5F0F3A8A1EB113AD00A0BC1F /* CmrViewController.swift */,
+				5F0F3A8B1EB113AD00A0BC1F /* CustomTableViewCell.swift */,
+				5F0F3A8C1EB113AD00A0BC1F /* CustomTableViewCell.xib */,
+				5F0F3A8D1EB113AD00A0BC1F /* DateViewModel.swift */,
+				5F0F3A8F1EB113AD00A0BC1F /* HighMemoryUsageViewController.swift */,
+				5F0F3A901EB113AD00A0BC1F /* ImageLoadViewController.swift */,
+				5F0F3A911EB113AD00A0BC1F /* Info.plist */,
+				5F0F3A921EB113AD00A0BC1F /* InvocationFilterViewController.swift */,
+				5F0F3A931EB113AD00A0BC1F /* InvocationManagmentViewController.swift */,
+				5F0F3A941EB113AD00A0BC1F /* InvocationModel.swift */,
+				5F0F3A951EB113AD00A0BC1F /* InvocationViewController.swift */,
+				5F0F3A961EB113AD00A0BC1F /* ListEntry.swift */,
+				5F0F3A971EB113AD00A0BC1F /* ManyEqualUrlCallViewController.swift */,
+				5F0F3A981EB113AD00A0BC1F /* ManyRemoteCallsViewController.swift */,
+				5F0F3A991EB113AD00A0BC1F /* ManyURLCallsViewController.swift */,
+				5F0F3A9A1EB113AD00A0BC1F /* NumericTextField.swift */,
+				5F0F3A9B1EB113AD00A0BC1F /* ScheduleRecordingViewController.swift */,
+				5F0F3A9C1EB113AD00A0BC1F /* SettingsViewController.swift */,
+				5F0F3A9D1EB113AD00A0BC1F /* StorageManagmentViewController.swift */,
+				5F0F3A9E1EB113AD00A0BC1F /* StorageModel.swift */,
+				5F0F3A9F1EB113AD00A0BC1F /* StorageViewController.swift */,
+				5F0F3AA01EB113AD00A0BC1F /* SuperModel.swift */,
+				5F0F3AA11EB113AD00A0BC1F /* TableController.swift */,
+				5F0F3AA21EB113AD00A0BC1F /* TableViewController.swift */,
+				5F0F3AA31EB113AD00A0BC1F /* UIUtil.swift */,
+				5F0F3AA41EB113AD00A0BC1F /* URLSessionExtender.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F0F39C51EB1111800A0BC1F /* diagnoseit-ios-mobile-agent-sampleapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F0F39D81EB1111800A0BC1F /* Build configuration list for PBXNativeTarget "diagnoseit-ios-mobile-agent-sampleapp" */;
+			buildPhases = (
+				5F0F39C21EB1111800A0BC1F /* Sources */,
+				5F0F39C31EB1111800A0BC1F /* Frameworks */,
+				5F0F39C41EB1111800A0BC1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "diagnoseit-ios-mobile-agent-sampleapp";
+			productName = "diagnoseit-ios-mobile-agent-sampleapp";
+			productReference = 5F0F39C61EB1111800A0BC1F /* diagnoseit-ios-mobile-agent-sampleapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F0F39BE1EB1111800A0BC1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = rss;
+				TargetAttributes = {
+					5F0F39C51EB1111800A0BC1F = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5F0F39C11EB1111800A0BC1F /* Build configuration list for PBXProject "diagnoseit-ios-mobile-agent-sampleapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F0F39BD1EB1111800A0BC1F;
+			productRefGroup = 5F0F39C71EB1111800A0BC1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F0F39C51EB1111800A0BC1F /* diagnoseit-ios-mobile-agent-sampleapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F0F39C41EB1111800A0BC1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0F39D41EB1111800A0BC1F /* LaunchScreen.storyboard in Resources */,
+				5F0F39D11EB1111800A0BC1F /* Assets.xcassets in Resources */,
+				5F0F39F71EB1114E00A0BC1F /* LICENSE in Resources */,
+				5F0F3AB21EB113AD00A0BC1F /* BookTableViewCell.xib in Resources */,
+				5F0F3AC11EB113AD00A0BC1F /* CustomTableViewCell.xib in Resources */,
+				5F0F39CF1EB1111800A0BC1F /* Main.storyboard in Resources */,
+				5F0F3AC51EB113AD00A0BC1F /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F0F39C21EB1111800A0BC1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0F39F11EB1114E00A0BC1F /* BatteryLevel.swift in Sources */,
+				5F0F3AAE1EB113AD00A0BC1F /* AlertView.swift in Sources */,
+				5F0F3AB61EB113AD00A0BC1F /* BusinessContextModel.swift in Sources */,
+				5F0F3AA51EB113AD00A0BC1F /* AgentInstrumentedMethodModel.swift in Sources */,
+				5F0F39EF1EB1114E00A0BC1F /* Agent.swift in Sources */,
+				5F0F3AAF1EB113AD00A0BC1F /* AntiPatternViewController.swift in Sources */,
+				5F0F3AC71EB113AD00A0BC1F /* InvocationManagmentViewController.swift in Sources */,
+				5F0F39F61EB1114E00A0BC1F /* IntervalMetricsController.swift in Sources */,
+				5F0F39F91EB1114E00A0BC1F /* nativeDiagnostics.c in Sources */,
+				5F0F3AC21EB113AD00A0BC1F /* DateViewModel.swift in Sources */,
+				5F0F3ACF1EB113AD00A0BC1F /* ScheduleRecordingViewController.swift in Sources */,
+				5F0F3AC31EB113AD00A0BC1F /* HighMemoryUsageViewController.swift in Sources */,
+				5F0F39F01EB1114E00A0BC1F /* AsynchronousMetricsController.swift in Sources */,
+				5F0F3AD61EB113AD00A0BC1F /* TableViewController.swift in Sources */,
+				5F0F3AD01EB113AD00A0BC1F /* SettingsViewController.swift in Sources */,
+				5F0F39F51EB1114E00A0BC1F /* DiskMetric.swift in Sources */,
+				5F0F3AA61EB113AD00A0BC1F /* AgentManagementViewController.swift in Sources */,
+				5F0F3AD21EB113AD00A0BC1F /* StorageModel.swift in Sources */,
+				5F0F3AC81EB113AD00A0BC1F /* InvocationModel.swift in Sources */,
+				5F0F3AD51EB113AD00A0BC1F /* TableController.swift in Sources */,
+				5F0F3AA81EB113AD00A0BC1F /* AgentMethodViewController.swift in Sources */,
+				5F0F3AC41EB113AD00A0BC1F /* ImageLoadViewController.swift in Sources */,
+				5F0F3AD41EB113AD00A0BC1F /* SuperModel.swift in Sources */,
+				5F0F39FC1EB1114E00A0BC1F /* RestManager.swift in Sources */,
+				5F0F39FD1EB1114E00A0BC1F /* Span.swift in Sources */,
+				5F0F3ACB1EB113AD00A0BC1F /* ManyEqualUrlCallViewController.swift in Sources */,
+				5F0F3ADC1EB113C300A0BC1F /* ViewController.swift in Sources */,
+				5F0F3AB31EB113AD00A0BC1F /* BusinessContextDefinitionModel.swift in Sources */,
+				5F0F3AB41EB113AD00A0BC1F /* BusinessContextDefinitionsViewController.swift in Sources */,
+				5F0F3AA71EB113AD00A0BC1F /* AgentMethodDetailViewController.swift in Sources */,
+				5F0F3ADB1EB113C300A0BC1F /* AppDelegate.swift in Sources */,
+				5F0F3ABC1EB113AD00A0BC1F /* BusinessTransactionModel.swift in Sources */,
+				5F0F39F41EB1114E00A0BC1F /* DataStorage.swift in Sources */,
+				5F0F3ABA1EB113AD00A0BC1F /* BusinessTransactionDefinitionsViewController.swift in Sources */,
+				5F0F3AAD1EB113AD00A0BC1F /* AgentViewController.swift in Sources */,
+				5F0F3AC91EB113AD00A0BC1F /* InvocationViewController.swift in Sources */,
+				5F0F3ACC1EB113AD00A0BC1F /* ManyRemoteCallsViewController.swift in Sources */,
+				5F0F39FA1EB1114E00A0BC1F /* NetworkReachability.swift in Sources */,
+				5F0F39FE1EB1114E00A0BC1F /* SSIDSniffer.swift in Sources */,
+				5F0F39F81EB1114E00A0BC1F /* LocationHandler.swift in Sources */,
+				5F0F3AAB1EB113AD00A0BC1F /* AgentStatusModel.swift in Sources */,
+				5F0F3AD31EB113AD00A0BC1F /* StorageViewController.swift in Sources */,
+				5F0F3ABF1EB113AD00A0BC1F /* CmrViewController.swift in Sources */,
+				5F0F3ACA1EB113AD00A0BC1F /* ListEntry.swift in Sources */,
+				5F0F3ABE1EB113AD00A0BC1F /* BusinessTransactionViewController.swift in Sources */,
+				5F0F3A001EB1114E00A0BC1F /* Util.swift in Sources */,
+				5F0F3ACE1EB113AD00A0BC1F /* NumericTextField.swift in Sources */,
+				5F0F3AC61EB113AD00A0BC1F /* InvocationFilterViewController.swift in Sources */,
+				5F0F3AB01EB113AD00A0BC1F /* Book.swift in Sources */,
+				5F0F3AAC1EB113AD00A0BC1F /* AgentUsedSensorModel.swift in Sources */,
+				5F0F3ABD1EB113AD00A0BC1F /* BusinessTransactionsViewController.swift in Sources */,
+				5F0F3ACD1EB113AD00A0BC1F /* ManyURLCallsViewController.swift in Sources */,
+				5F0F3ABB1EB113AD00A0BC1F /* BusinessTransactionDefinitionViewController.swift in Sources */,
+				5F0F3AB11EB113AD00A0BC1F /* BookTableViewCell.swift in Sources */,
+				5F0F3AD71EB113AD00A0BC1F /* UIUtil.swift in Sources */,
+				5F0F3AB81EB113AD00A0BC1F /* BusinessContextViewController.swift in Sources */,
+				5F0F3AB91EB113AD00A0BC1F /* BusinessTransactionDefinitionModel.swift in Sources */,
+				5F0F3AB51EB113AD00A0BC1F /* BusinessContextDefinitionViewController.swift in Sources */,
+				5F0F3AA91EB113AD00A0BC1F /* AgentModel.swift in Sources */,
+				5F0F3AAA1EB113AD00A0BC1F /* AgentSensorViewController.swift in Sources */,
+				5F0F39F21EB1114E00A0BC1F /* Constants.swift in Sources */,
+				5F0F3AD81EB113AD00A0BC1F /* URLSessionExtender.swift in Sources */,
+				5F0F3AD11EB113AD00A0BC1F /* StorageManagmentViewController.swift in Sources */,
+				5F0F3AC01EB113AD00A0BC1F /* CustomTableViewCell.swift in Sources */,
+				5F0F3AB71EB113AD00A0BC1F /* BusinessContextsViewController.swift in Sources */,
+				5F0F39FF1EB1114E00A0BC1F /* UseCase.swift in Sources */,
+				5F0F39F31EB1114E00A0BC1F /* DataSerializer.swift in Sources */,
+				5F0F39FB1EB1114E00A0BC1F /* RemoteCall.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5F0F39CD1EB1111800A0BC1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F0F39CE1EB1111800A0BC1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F0F39D21EB1111800A0BC1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F0F39D31EB1111800A0BC1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F0F39D61EB1111800A0BC1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F0F39D71EB1111800A0BC1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F0F39D91EB1111800A0BC1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "diagnoseit-ios-mobile-agent-sampleapp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-stuttgart.diagnoseit-ios-mobile-agent-sampleapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "diagnoseit-ios-mobile-agent-sampleapp/Agent/diagnoseit-ios-mobile-agent-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5F0F39DA1EB1111800A0BC1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "diagnoseit-ios-mobile-agent-sampleapp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-stuttgart.diagnoseit-ios-mobile-agent-sampleapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "diagnoseit-ios-mobile-agent-sampleapp/Agent/diagnoseit-ios-mobile-agent-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F0F39C11EB1111800A0BC1F /* Build configuration list for PBXProject "diagnoseit-ios-mobile-agent-sampleapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0F39D61EB1111800A0BC1F /* Debug */,
+				5F0F39D71EB1111800A0BC1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F0F39D81EB1111800A0BC1F /* Build configuration list for PBXNativeTarget "diagnoseit-ios-mobile-agent-sampleapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0F39D91EB1111800A0BC1F /* Debug */,
+				5F0F39DA1EB1111800A0BC1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F0F39BE1EB1111800A0BC1F /* Project object */;
+}
